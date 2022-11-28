@@ -16,7 +16,7 @@ Feito isso vai aparecer 3 opções, primeiramente gere a chave pública (digitan
 Em seguida você já pode criptografar (digitando 2) ou descriptografar (digitando 3) qualquer trecho desejado.
   - por favor atentar a remover caracteres inválidos, são apenas validos letras na hora de encriptar.
 
-Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no mesmo diretorio onde se encontra o codigo
+Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no mesmo diretorio onde se encontra o codigo.
 
 # Como funciona
 ## Gerar chave pública
@@ -24,7 +24,9 @@ Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no
   
   -  Um par de primos _p_ e _q_;
   
-  -  Um expoente _e_ que seja relativamente primo a (_p_-1)(_q_-1);
+  -  Um expoente _e_ que seja relativamente primo a (_p_-1)(_q_-1).
+  
+  Desse modo, serão salvos _e_ e _n_ (_p_*_q_) como chave pública num arquivo de texto.
 
 ## Encriptar
   Para criptografar a mensagem, é utilizado a formula:
@@ -44,7 +46,7 @@ Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no
   -  _c_ é o caractere criptografado.
    
 ## Descriptar
-   Para descriptografar a mensagem, utilizamos a fórmula
+   Para descriptografar a mensagem, utilizamos a fórmula:
   ```sh
   m = c^d mod n
   ```

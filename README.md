@@ -1,6 +1,7 @@
 # Criptografia RSA | Matemática Discreta
 
 Projeto final da matéria de Matemática Discreta.
+
 Feito por Vinícius da Costa Neitzke (vcn@ic.ufal.br).
 
 

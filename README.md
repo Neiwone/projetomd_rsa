@@ -24,9 +24,11 @@ Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no
   
   -  Um par de primos _p_ e _q_;
   
-  -  Um expoente _e_ que seja relativamente primo a (_p_-1)(_q_-1).
+  -  Um expoente _e_ que seja relativamente primo a (_p_-1)(_q_-1);
   
-  Desse modo, serão salvos _e_ e _n_ (_p_*_q_) como chave pública num arquivo de texto.
+  -  _n_ é a multiplicação de _p_ e _q_;
+  
+  Desse modo, serão salvos _e_ e _n_ como chave pública num arquivo de texto.
 
 ## Encriptar
   Para criptografar a mensagem, é utilizado a formula:
@@ -39,7 +41,7 @@ Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no
     
   -  _e_ é o primo entre si de _phi(n)_;
   
-  -  _phi(n)_ é (_p_-1)(_q_-1);
+  -  _phi(n)_ é (_p_-1)*(_q_-1);
      
   -  _n_ é a multiplicação de _p_ e _q_;
    

@@ -19,8 +19,14 @@ Em seguida você já pode criptografar (digitando 2) ou descriptografar (digitan
 Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no mesmo diretorio onde se encontra o codigo
 
 # Como funciona
+## Gerar chave pública
+  Para gerar a chave pública são necessários:
+  
+  -  Um par de primos _p_ e _q_;
+  
+  -  Um expoente _e_ que seja relativamente primo a (_p_-1)(_q_-1);
 
-## Criptografia
+## Encriptar
   Para criptografar a mensagem, é utilizado a formula:
   ```sh
   c = m^e mod n
@@ -37,7 +43,7 @@ Em todas opcões, os resultados são salvos em um respectivo arquivo de texto no
    
   -  _c_ é o caractere criptografado.
    
-## Descriptografia
+## Descriptar
    Para descriptografar a mensagem, utilizamos a fórmula
   ```sh
   m = c^d mod n

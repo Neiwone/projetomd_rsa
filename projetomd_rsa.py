@@ -79,13 +79,15 @@ def desencriptar():
 
     p = int(input("digite o primo 'p': \n"))
 
-    while (primo(p) == 0):
-        p = int(input("p não é primo \ndigite o primo 'p': \n"))
+    if(p < 1e100):
+        while (primo(p) == 0):
+            p = int(input("p não é primo \ndigite o primo 'p': \n"))
 
     q = int(input("digite o primo 'q': \n"))
 
-    while (primo(q) == 0):
-        q = int(input("q não é primo \ndigite o primo 'q': \n"))
+    if(q < 1e100):
+        while (primo(q) == 0):
+            q = int(input("q não é primo \ndigite o primo 'q': \n"))
 
     n = p * q
     totiente = (p - 1) * (q - 1)
